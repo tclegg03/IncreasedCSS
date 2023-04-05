@@ -1,0 +1,11 @@
+*{
+}
+li{
+    display: inline-flex;
+    list-style: none;
+}
+.header{
+    color: black;
+    position: relative;
+    list-style: none;
+}
