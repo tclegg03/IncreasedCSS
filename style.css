@@ -8,7 +8,9 @@
 *{
     box-sizing: border-box;
     background-color: rgb(190, 190, 190);
-    scroll-behavior: smooth !important;
+}
+html{
+    scroll-behavior: smooth;
 }
 header{
     position: relative;
@@ -19,237 +21,56 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-ul{
-    background-color: var(--header);
+nav{
     display: flex;
-    position: relative;
-    width: 75%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 10%;
-    font-size: 30px;
-    align-items: flex-end;
-}
-li{
-    position: relative;
-    display: flex;
-    background-color: var(--header);
-    font-style: none;
-}
-a{
-    background-color: var(--header);
-    color: var(--headertext);
-    text-decoration: none;
-}
-
-.main{
-    display: flex;
-    flex-direction: row;
-}
-
-.bodytitle{
-    position: relative;
-    display: flex;
-    background-color: rgb(190, 190, 190);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    width: 55%;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-end;
-    color: var(--header);
-}
-.rightbody{
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-.rightside{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-color: var(--header);
-    border-width: thick;
-    padding-left: 30px;
-    width: 55%;
-    color: var(--header);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-    align-content: center;
-    flex-direction: column;
-}
-
-.titles{
-    display: flex;
-    flex-direction: column;
-    padding-left: 30%;
-    padding-right: 20px;
-    width: 45%;
-    height: 500px;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-width: thick;
-    border-color: var(--header);
-    margin-right: 10px;
-}
-
-#heading{
-    background-color: var(--header);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 25%;
-    font-size: 45px;
-}
-
-#aboutme{
-    display:none;
-}
-
-#leftabout{
-    color: var(--header);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-}
-
-#leftcontact{
-    color: var(--header);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-}
-
-#leftresume{
-    color: var(--header);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-
-}
-
-#contactme{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(190, 190, 190);
-}
-#myresume{
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: flex-end;
     align-items: flex-end;
-    background-color: rgb(190, 190, 190)!important;
+    background-color: var(--header);
 }
-button{
-    background: none;
-    padding: none;
-    border: none;
-}
-a:hover{
-    background-color: var(--headertext);
-    color: var(--header);
-    transition: .8s;
-}
-.links:hover{
-    background-color: var(--headertext);
-    color: var(--header);
-    padding: 20px;
-    cursor: pointer;
-    transition: .8s;
-    opacity: 1;
-}
-.links:active{
-    scroll-behavior: auto;
-}
-
-
-
-#leftabout:active{
-    background-position: left;
-    background-color: var(--headertext);
-    color: rgb(190, 190, 190);
-    transform: translateX(120%);
-    transition: 1s;
-    cursor: pointer;
-}
-#leftcontact:active{
-    background-color: var(--headertext);
-    color: rgb(190, 190, 190);
-    transform:translateX(120%);
-    transition: 1s;
-    cursor: pointer;
-}
-#leftresume:active{
-    background-color: var(--headertext);
-    color: rgb(190, 190, 190);
-    transform: translateX(120%);
-    transition: 1s;
-    cursor: pointer;
-}
-@media only screen and (max-width:768px) {
-    header{
-        background-color: var(--forest);
-    }
-    #heading{
-        background-color:var(--forest);
-        color:var(--toasted)
-    }
-ul{
-    background-color: var(--forest);
-    color: var(--toasted);
-}
-a{
-    background-color: var(--forest);
-    color: var(--toasted);
-}
-.link{
-    background-color: var(--forest);
-    color: var(--toasted);
-}
-.titles{
-    border-color: var(--forest);
-}
-
 img{
-    display: none;
+    display: flex;
+    margin: 5px;
+    justify-content: space-evenly;
+    align-self: center;
+    border-style: solid;
+    border-color: var(--header);
 }
-a:hover{
-    background-color: var(--toasted);
-    color: var(--forest);
-    transition: .8s;
-}
-.links:hover{
-    background-color: var(--toasted);
-    transition: .8s;
+.aboutme{
+    color: var(--header);
+    font-size: 25px;
+    padding-left: 1em;
+    padding-right: 20vw;
 }
 
-#leftabout:active{
-    background-position: left;
-    background-color: var(--toasted);
-    color: var(--forest);
-    transform: translateX(120%);
-    transition: 1s;
-    cursor: pointer;
+#main{
+    display: flex;
+    height: 1000px;
 }
-#leftcontact:active{
-    background-color: var(--toasted);
-    color: var(--forest);
-    transform:translateX(120%);
-    transition: 1s;
-    cursor: pointer;
+#heading{
+    display: flex;
+    background-color: var(--header);
+    font-size: 45px;
+    padding-left: 1em;
+
 }
-#leftresume:active{
-    background-color: var(--toasted);
-    color: var(--forest);
-    transform: translateX(120%);
-    transition: 1s;
-    cursor: pointer;
+#leftside{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 1500px;
+    width: 25%;
+    border-right: solid;
+    border-color: var(--header);
+    color: var(--header);
+    font-size: 45px;
+    padding-right: 1em;
 }
-#leftcontact:active{
-    background-color: var(--forest);
-    color: rgb(190, 190, 190);
-    transform:translateX(120%);
-    transition: 1s;
-    cursor: pointer;
-}
+.work{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 800px;
 }
