@@ -103,7 +103,11 @@ img{
     color: var(--header);
     transition: .8s;
 }
-
+#headpic{
+    display: inline;
+    right: 100px;
+    margin-left: -25%;
+}
 @media screen and (max-width:768px){
     *{
         box-sizing: border-box;
@@ -131,18 +135,24 @@ img{
     .aboutme{
         color: var(--toasted);
     }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 45%;
+        padding: 0;
+        background-color: var(--forest);
+        color: var(--toasted);
+        text-decoration: none;
+        font-size: 20px;
+    }
     #heading{
         display: flex;
         background-color: var(--forest);
-        font-size: 45px;
+        font-size: 30px;
         padding-left: 1em;
 }
-.navigation{
-    background-color: var(--forest);
-    color: var(--toasted);
-    text-decoration: none;
-    font-size: 30px;
-}
+
 .mycontactinfo{
     color: var(--toasted);
     flex-direction: column;
@@ -167,5 +177,10 @@ img{
 }
 #rightside{
     height: 800px;
+}
+#headpic{
+    display: none;
+    right: 100px;
+    margin-left: -25%;
 }
 }
