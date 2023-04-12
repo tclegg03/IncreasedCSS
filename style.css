@@ -14,6 +14,7 @@ html{
 }
 header{
     position: relative;
+    justify-content: space-between;
     display: flex;
     background-color: var(--header);
     color: var(--headertext);
@@ -21,14 +22,7 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav{
-    display: flex;
-    width: 25%;
-    justify-content: space-between;
-    align-self: flex-end;
-    align-items: flex-end;
-    background-color: var(--header);
-}
+
 img{
     display: flex;
     margin: 5px;
@@ -43,9 +37,20 @@ img{
     padding-left: 1em;
     padding-right: 20vw;
 }
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    width: 35%;
+    background-color: var(--header);
+    color: var(--headertext);
+    text-decoration: none;
+    font-size: 30px;
 
+}
 #main{
     display: flex;
+    flex-direction: row;
     height: 1000px;
 }
 #heading{
@@ -68,9 +73,99 @@ img{
     font-size: 45px;
     padding-right: 1em;
 }
+#rightside{
+    height: 1000px;
+}
 .work{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     height: 800px;
+}
+.mycontactinfo{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--header);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+
+}
+.navigation:hover{
+    background-color: var(--headertext);
+    color: var(--header);
+    transition: .8s;
+}
+
+.mycontactinfo:hover{
+    background-color: var(--headertext);
+    color: var(--header);
+    transition: .8s;
+}
+
+@media screen and (max-width:768px){
+    *{
+        box-sizing: border-box;
+        background-color:var(--forest);
+        color: var(--toasted)
+    }
+    header{
+        position: relative;
+        display: flex;
+        background-color: var(--forest);
+        color: var(--toasted);
+        padding-bottom: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    nav{
+        display: flex;
+        width: 75%;
+        padding-left: 25%;
+        justify-content: space-between;
+        align-self: flex-end;
+        align-items: flex-end;
+        background-color: var(--header);
+    }
+    .aboutme{
+        color: var(--toasted);
+    }
+    #heading{
+        display: flex;
+        background-color: var(--forest);
+        font-size: 45px;
+        padding-left: 1em;
+}
+.navigation{
+    background-color: var(--forest);
+    color: var(--toasted);
+    text-decoration: none;
+    font-size: 30px;
+}
+.mycontactinfo{
+    color: var(--toasted);
+    flex-direction: column;
+    justify-content: space-between;
+    top: -100px;
+}
+#park{
+    display: none;
+}
+#leftside{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 2500px;
+    width: 25%;
+    border-right: solid;
+    border-color: var(--toasted);
+    color: var(--toasted);
+    font-size: 45px;
+    padding-right: 1em;
+}
+#rightside{
+    height: 800px;
+}
 }
